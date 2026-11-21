@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charuka Amandi Kumarasinghe — Management Information Systems & Business Tech</title>
+  <meta name="description" content="Portfolio of Charuka Amandi Kumarasinghe. BSc (Special) in Management Information Systems undergraduate at NSBM Green University. Business analysis, full-stack systems, UI/UX, and Power BI data intelligence.">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Bold Geometric Sans) & Caveat (Handwritten Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Design System & Motion Engine Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Organic Preloader / Loading Animation -->
+  <div class="preloader-overlay" id="preloaderOverlay" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-title">
+        <span>Charuka</span> <span class="script-accent text-coral">Amandi</span>
+      </div>
+      <div class="preloader-subtitle">BSc (Special) in MIS &bull; NSBM</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar-fill" id="preloaderBarFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Indicator (Coral -> Gold -> Teal) -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Ambient Organic Blobs for Parallax Background -->
+  <div class="bg-blob blob-peach data-parallax" data-speed="0.15" aria-hidden="true"></div>
+  <div class="bg-blob blob-teal data-parallax" data-speed="0.22" aria-hidden="true"></div>
+  <div class="bg-blob blob-mustard data-parallax" data-speed="0.18" aria-hidden="true"></div>
+
+  <!-- Ambient Floating Doodles -->
+  <!-- Slow-Rotating Sun Doodle -->
+  <svg class="ambient-doodle sun-doodle data-parallax" data-speed="0.12" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+    <circle cx="50" cy="50" r="22" stroke-width="3.5" fill="rgba(244, 178, 54, 0.1)"/>
+    <line x1="50" y1="12" x2="50" y2="2"/>
+    <line x1="50" y1="98" x2="50" y2="88"/>
+    <line x1="12" y1="50" x2="2" y2="50"/>
+    <line x1="98" y1="50" x2="88" y2="50"/>
+    <line x1="23" y1="23" x2="16" y2="16"/>
+    <line x1="84" y1="84" x2="77" y2="77"/>
+    <line x1="23" y1="77" x2="16" y2="84"/>
+    <line x1="84" y1="16" x2="77" y2="23"/>
+  </svg>
+
+  <!-- Pulsing Sparkles -->
+  <svg class="ambient-doodle sparkle-doodle sparkle-1 data-parallax" data-speed="-0.2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/>
+  </svg>
+  <svg class="ambient-doodle sparkle-doodle sparkle-2 data-parallax" data-speed="-0.15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z"/>
+  </svg>
+
+  <!-- Floating Paper Plane Doodle -->
+  <svg class="ambient-doodle paper-plane-doodle data-parallax" data-speed="-0.28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M22 2L11 13"/>
+    <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+  </svg>
+
+  <!-- ==========================================================================
+       1. NAVBAR
+       ========================================================================== -->
+  <header class="header-nav" id="headerNav">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand-logo" aria-label="Charuka Amandi Portfolio Home">
+        <span>Charuka Amandi</span>
+      </a>
+
+      <nav class="nav-links-desktop" id="navDesktopMenu">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Core Competencies</a>
+        <a href="#impact" class="nav-link">Academic Milestones</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a href="#contact" class="btn-primary">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-right" class="btn-arrow-icon"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left Column: Eyebrow, Headline, Subtext, Actions -->
+        <div class="hero-text-col">
+          <div class="hero-eyebrow" id="heroEyebrow">
+            <span class="badge-dot"></span>
+            <span>BSc (Special) in MIS Undergraduate &bull; NSBM</span>
+          </div>
+
+          <h1 class="hero-headline" id="heroHeadline">
+            Turning Ideas<br>
+            Into
+            <span class="underline-wrapper">
+              <span class="script-accent text-coral">Impact</span>
+              <svg class="yellow-draw-underline" id="yellowUnderline" viewBox="0 0 160 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 10C42 4 118 3 156 12C128 8 72 7 24 13" stroke="#F4B236" stroke-width="4.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="hero-subtext" id="heroSubtext">
+            Management Information Systems undergraduate at NSBM Green University with a strong academic foundation in business management, systems analysis, database management, web development, and Power BI business intelligence. Seeking an internship to solve real-world business and IT challenges.
+          </p>
+
+          <div class="hero-actions" id="heroActions">
+            <a href="#projects" class="btn-primary">
+              <span>Explore My Projects</span>
+              <i data-lucide="arrow-right" class="btn-arrow-icon"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1Jaac0xOW-Occb3NcA4Q6z3P5To6l7Beu/view?usp=sharing" target="_blank" rel="noopener" class="btn-outline-play">
+              <span class="play-circle">
+                <i data-lucide="file-text" style="width: 15px; height: 15px; fill: currentColor; margin-left: 2px;"></i>
+              </span>
+              <span>View CV (Google Drive)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Cutout Portrait on Organic Blobs + "Design with Purpose" Badge -->
+        <div class="hero-visual-col">
+          <div class="hero-cutout-frame anim-from-right" id="heroPhotoWrap">
+            <!-- Organic Fluid Blobs Behind Cutout -->
+            <div class="hero-blob-backdrop"></div>
+
+            <!-- Profile Cutout Photo (assets/images/profile.jpg) -->
+            <img src="assets/images/profile.jpg" alt="Charuka Amandi Kumarasinghe" class="hero-portrait-img">
+
+            <!-- Foreground Floating Badge (Drifts ahead in parallax) -->
+            <div class="floating-badge data-parallax" data-speed="-0.22">
+              <div class="badge-icon-wrap">
+                <i data-lucide="award" style="width: 17px; height: 17px;"></i>
+              </div>
+              <div>
+                <div class="badge-text-top">Design with Purpose</div>
+                <div class="badge-text-sub">Business &amp; IT Solutions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ABOUT STRIP
+         ========================================================================== -->
+    <section class="about-strip-section" id="about">
+      <div class="container">
+        <div class="about-strip-grid">
+          <!-- About Video: Slides in from left -->
+          <div class="about-visual-wrap anim-from-left">
+            <video class="about-visual-video" autoplay loop muted playsinline poster="assets/images/hero-bg.jpg">
+              <source src="assets/images/Woman_coding_on_laptop_c6704681.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- About Content from CV Professional Summary & Education -->
+          <div class="about-content-wrap">
+            <div class="about-quote-box" style="position: static; margin-bottom: 24px;">
+              <p class="about-quote-text">
+                “Bridging business strategy, relational databases, and human-centred systems to engineer real impact.”
+              </p>
+            </div>
+            <div class="section-head-badge">
+              <span class="badge-dot"></span>
+              <span>Professional Summary</span>
+            </div>
+            <h2 class="section-main-title reveal-text">
+              Building intelligent systems and <span class="script-accent text-coral">analytical</span> solutions.
+            </h2>
+            <p class="about-paragraph reveal-text">
+              I am a third-year undergraduate pursuing a UGC-Approved <strong>BSc (Special) in Management Information Systems</strong> at <strong>NSBM Green University</strong> (2024 – Present). Prior to my university studies, I completed my G.C.E. Advanced Level (2023) and Ordinary Level (2019) examinations at <strong>Ferguson High School, Ratnapura</strong>.
+            </p>
+            <p class="about-paragraph reveal-text">
+              My technical background integrates SQL, Python, Java, web development, and data visualisation using Microsoft Power BI, supported by comprehensive knowledge of software engineering, information systems, and business process modeling. I am actively seeking an internship to apply my analytical thinking and problem-solving skills to industry challenges.
+            </p>
+
+            <div class="about-pill-tags">
+              <span class="tag-pill">BSc (Special) in MIS</span>
+              <span class="tag-pill">NSBM Green University</span>
+              <span class="tag-pill">Microsoft Power BI (PL-300)</span>
+              <span class="tag-pill">Ferguson High School</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. 4 FEATURED PROJECT CARDS (EXACTLY FROM CV)
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="projects-header-row">
+          <div>
+            <div class="section-head-badge">
+              <span class="badge-dot"></span>
+              <span>Academic &amp; Practical Work</span>
+            </div>
+            <h2 class="section-main-title reveal-text">
+              Featured <span class="script-accent text-coral">Projects</span>
+            </h2>
+            <p class="section-subtitle-text reveal-text">
+              Hands-on engineering, human-computer interaction, and data analysis projects developed during my degree program.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://github.com/amandikumarasinghe" target="_blank" rel="noopener" class="btn-primary">
+              <span>View GitHub Profile</span>
+              <i data-lucide="arrow-right" class="btn-arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: InkLink (Row 1 Left - Speed 0.08) -->
+          <article class="project-card anim-rotate-up data-parallax" data-speed="0.08">
+            <div class="project-info-body">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                <span class="project-badge-pill" style="position: static;">Full-Stack Web</span>
+                <span style="font-size: 12px; font-weight: 700; color: var(--color-coral);">2024</span>
+              </div>
+              <div class="project-tag-list">
+                <span class="project-tag-pill">HTML &amp; CSS</span>
+                <span class="project-tag-pill">JavaScript</span>
+                <span class="project-tag-pill">MySQL</span>
+                <span class="project-tag-pill">Spring Boot</span>
+              </div>
+              <h3 class="project-title">InkLink &ndash; Creative Storytelling Platform</h3>
+              <p class="project-desc-text">
+                Built a full-stack story-sharing platform with real-time feeds, creator profiles, and secure authentication to empower independent storytellers and readers.
+              </p>
+              <a href="https://github.com/sahannavo/InkLink" target="_blank" rel="noopener" class="project-footer-link">
+                <span>View Source Code (GitHub)</span>
+                <div class="project-arrow-wrap">
+                  <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Forum Hub (Row 1 Right - Speed 0.14) -->
+          <article class="project-card anim-rotate-up data-parallax" data-speed="0.14">
+            <div class="project-info-body">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                <span class="project-badge-pill" style="position: static;">Academic Group Project</span>
+                <span style="font-size: 12px; font-weight: 700; color: var(--color-coral);">2024</span>
+              </div>
+              <div class="project-tag-list">
+                <span class="project-tag-pill">PHP</span>
+                <span class="project-tag-pill">MySQL</span>
+                <span class="project-tag-pill">JavaScript</span>
+                <span class="project-tag-pill">CRUD Systems</span>
+              </div>
+              <h3 class="project-title">Forum Hub &ndash; Online Discussion Forum</h3>
+              <p class="project-desc-text">
+                Developed a structured discussion platform featuring secure user authentication, topic management, threaded comments, and likes with robust CRUD database operations.
+              </p>
+              <a href="https://github.com/sahannavo/ForumHub" target="_blank" rel="noopener" class="project-footer-link">
+                <span>View Source Code (GitHub)</span>
+                <div class="project-arrow-wrap">
+                  <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: BIO Pohora (Row 2 Left - Speed 0.06) -->
+          <article class="project-card anim-rotate-up data-parallax" data-speed="0.06">
+            <div class="project-info-body">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                <span class="project-badge-pill" style="position: static;">HCI &amp; Mobile UX</span>
+                <span style="font-size: 12px; font-weight: 700; color: var(--color-coral);">2025</span>
+              </div>
+              <div class="project-tag-list">
+                <span class="project-tag-pill">Human-Computer Interaction</span>
+                <span class="project-tag-pill">Figma</span>
+                <span class="project-tag-pill">Mobile UX</span>
+                <span class="project-tag-pill">User-Centred Design</span>
+              </div>
+              <h3 class="project-title">BIO Pohora &ndash; Agricultural Fertilizer Subsidy Platform</h3>
+              <p class="project-desc-text">
+                Led a team designing a mobile subsidy solution with digital tokens, QR verification, and allocation tracking, directing the complete user-centred design workflow.
+              </p>
+              <a href="https://lnkd.in/p/g6-ap-7W" target="_blank" rel="noopener" class="project-footer-link">
+                <span>View Project on LinkedIn</span>
+                <div class="project-arrow-wrap">
+                  <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Sleep Health Dashboard (Row 2 Right - Speed 0.12) -->
+          <article class="project-card anim-rotate-up data-parallax" data-speed="0.12">
+            <div class="project-info-body">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+                <span class="project-badge-pill" style="position: static;">Data Analytics &amp; BI</span>
+                <span style="font-size: 12px; font-weight: 700; color: var(--color-coral);">2025</span>
+              </div>
+              <div class="project-tag-list">
+                <span class="project-tag-pill">Power BI</span>
+                <span class="project-tag-pill">DAX Measures</span>
+                <span class="project-tag-pill">Kaggle Dataset</span>
+                <span class="project-tag-pill">KPI Reporting</span>
+              </div>
+              <h3 class="project-title">Sleep Health &amp; Lifestyle Dashboard &ndash; Power BI</h3>
+              <p class="project-desc-text">
+                Built an interactive business intelligence dashboard analysing sleep, stress, and activity levels across 374 clinical records with dynamic KPI cards, charts, and slicers.
+              </p>
+              <a href="https://github.com/amandikumarasinghe" target="_blank" rel="noopener" class="project-footer-link">
+                <span>View on GitHub</span>
+                <div class="project-arrow-wrap">
+                  <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+                </div>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. WHAT WE DO (6 CORE COMPETENCIES) & OUR IMPACT (4 STATS)
+         ========================================================================== -->
+    <section class="services-impact-section" id="services">
+      <div class="container">
+        <!-- Core Competencies Header -->
+        <div class="center-text">
+          <div class="section-head-badge">
+            <span class="badge-dot"></span>
+            <span>Skill Matrix &bull; CV Competencies</span>
+          </div>
+          <h2 class="section-main-title reveal-text">
+            Core <span class="script-accent text-coral">Competencies</span>
+          </h2>
+          <p class="section-subtitle-text reveal-text">
+            Combining business systems analysis, software engineering, and data intelligence to solve complex business challenges.
+          </p>
+        </div>
+
+        <!-- 6 Competencies from CV: Slide in from Left with stagger -->
+        <div class="services-grid-6">
+          <!-- Competency 1 -->
+          <div class="service-item-card anim-from-left">
+            <div class="service-icon-bubble">
+              <i data-lucide="file-text"></i>
+            </div>
+            <h3 class="service-card-title">Business Analysis &amp; Requirements Gathering</h3>
+            <p class="service-card-desc">
+              Bridging business needs and IT solutions through stakeholder interviews, user requirement gathering, functional specifications, and workflow documentation.
+            </p>
+            <span class="service-card-link">
+              <span>Competency Details</span>
+              <i data-lucide="arrow-right"></i>
+            </span>
+          </div>
+
+          <!-- Competency 2 -->
+          <div class="service-item-card anim-from-left">
+            <div class="service-icon-bubble">
+              <i data-lucide="network"></i>
+            </div>
+            <h3 class="service-card-title">Information Systems &amp; Business Processes</h3>
+            <p class="service-card-desc">
+              Analysing organizational systems, modeling end-to-end enterprise workflows, and aligning software architectures with strategic operational goals.
+            </p>
+            <span class="service-card-link">
+              <span>Competency Details</span>
+              <i data-lucide="arrow-right"></i>
+            </span>
+          </div>
+
+          <!-- Competency 3 -->
+          <div class="service-item-card anim-from-left">
+            <div class="service-icon-bubble">
+              <i data-lucide="bar-chart-2"></i>
+            </div>
+            <h3 class="service-card-title">Data Analysis &amp; Visualisation (Power BI)</h3>
+            <p class="service-card-desc">
+              Transforming raw datasets into actionable intelligence using Microsoft Power BI (PL-300), DAX calculations, interactive KPI cards, and managerial reporting.
+            </p>
+            <span class="service-card-link">
+              <span>Competency Details</span>
+              <i data-lucide="arrow-right"></i>
+            </span>
+          </div>
+
+          <!-- Competency 4 -->
+          <div class="service-item-card anim-from-left">
+            <div class="service-icon-bubble">
+              <i data-lucide="database"></i>
+            </div>
+            <h3 class="service-card-title">Database Design &amp; Management</h3>
+            <p class="service-card-desc">
+              Designing relational database schemas (MySQL), developing entity-relationship diagrams (ERDs), normalising data, and writing optimized SQL queries.
+            </p>
+            <span class="service-card-link">
+              <span>Competency Details</span>
+              <i data-lucide="arrow-right"></i>
+            </span>
+          </div>
+
+          <!-- Competency 5 -->
+          <div class="service-item-card anim-from-left">
+            <div class="service-icon-bubble">
+              <i data-lucide="code"></i>
+            </div>
+            <h3 class="service-card-title">Web &amp; Software Development</h3>
+            <p class="service-card-desc">
+              Building dynamic applications using Java, Python, JavaScript, PHP, Spring Boot, and HTML/CSS, supported by version control via Git and GitHub.
+            </p>
+            <span class="service-card-link">
+              <span>Competency Details</span>
+              <i data-lucide="arrow-right"></i>
+            </span>
+          </div>
+
+          <!-- Competency 6 -->
+          <div class="service-item-card anim-from-left">
+            <div class="service-icon-bubble">
+              <i data-lucide="layout"></i>
+            </div>
+            <h3 class="service-card-title">UI/UX Design &amp; Systems Analysis</h3>
+            <p class="service-card-desc">
+              Applying Human-Computer Interaction (HCI) methodologies in Figma to produce wireframes, user personas, interactive prototypes, and user-centred workflows.
+            </p>
+            <span class="service-card-link">
+              <span>Competency Details</span>
+              <i data-lucide="arrow-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Academic Milestones & CV Stats Banner: Zoom in and Count Up -->
+        <div class="impact-banner-wrap" id="impact">
+          <div class="impact-header-row">
+            <div class="section-head-badge" style="background: rgba(244, 178, 54, 0.2); color: #F4B236;">
+              <span class="badge-dot" style="background: #F4B236;"></span>
+              <span>Active Internship Candidate &bull; NSBM</span>
+            </div>
+            <h2 class="section-main-title">
+              Academic Milestones &amp; <span class="script-accent text-mustard">Internship Readiness</span>
+            </h2>
+            <p class="section-subtitle-text">
+              Currently a 3rd-year undergraduate actively seeking an internship opportunity in Business Analysis, Systems Design, or Data Intelligence.
+            </p>
+          </div>
+
+          <div class="stats-grid-4">
+            <!-- Stat 1: 3rd Year -->
+            <div class="stat-tile-card anim-zoom-in">
+              <div class="stat-icon-wrap">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="stat-big-number">
+                <span class="stat-counter" data-target="3" data-suffix="rd">0</span>
+              </div>
+              <div class="stat-metric-title">Year Undergraduate (BSc MIS &bull; NSBM)</div>
+            </div>
+
+            <!-- Stat 2: 370+ Records Analysed -->
+            <div class="stat-tile-card anim-zoom-in">
+              <div class="stat-icon-wrap">
+                <i data-lucide="bar-chart-3"></i>
+              </div>
+              <div class="stat-big-number">
+                <span class="stat-counter" data-target="374" data-suffix="+">0</span>
+              </div>
+              <div class="stat-metric-title">Clinical Records Analysed in Power BI</div>
+            </div>
+
+            <!-- Stat 3: PL-300 Certification -->
+            <div class="stat-tile-card anim-zoom-in">
+              <div class="stat-icon-wrap">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="stat-big-number">
+                <span style="font-size: 0.88em; letter-spacing: 0.5px;">PL-300</span>
+              </div>
+              <div class="stat-metric-title">Microsoft Power BI Specialization</div>
+            </div>
+
+            <!-- Stat 4: Available for Internship -->
+            <div class="stat-tile-card anim-zoom-in" style="border-color: rgba(242, 100, 64, 0.4); background-color: rgba(242, 100, 64, 0.1);">
+              <div class="stat-icon-wrap" style="color: var(--color-coral);">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <div class="stat-big-number" style="color: var(--color-coral);">
+                <span style="font-size: 0.8em; letter-spacing: -0.5px;">Available</span>
+              </div>
+              <div class="stat-metric-title" style="color: #FFFFFF; font-weight: 700;">Seeking IT / Business Internship</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+         7. CLOSING CTA WITH TEAL CONTACT CARD (WITH REAL CV CONTACT DETAILS)
+         ========================================================================== -->
+    <section class="cta-closing-section" id="contact">
+      <div class="container">
+        <!-- Teal Contact Card: Slides in from Right -->
+        <div class="teal-contact-card anim-from-right">
+          <!-- Ambient Card Blobs -->
+          <div class="teal-card-blob-1" aria-hidden="true"></div>
+          <div class="teal-card-blob-2" aria-hidden="true"></div>
+
+          <!-- Left Info Column: Direct Details from CV -->
+          <div style="position: relative; z-index: 2;">
+            <div class="teal-card-eyebrow">
+              <span class="badge-dot" style="background: var(--color-mustard);"></span>
+              <span>Seeking Internship Opportunities</span>
+            </div>
+            <h2 class="teal-card-title">
+              Let's connect and create <span class="script-accent text-mustard">impact</span> together.
+            </h2>
+            <p class="teal-card-desc">
+              I am seeking an internship to apply my technical knowledge, analytical thinking, and problem-solving skills to real-world business and IT challenges. Feel free to reach out directly:
+            </p>
+
+            <div class="teal-contact-methods">
+              <a href="mailto:amandikumarasinghe19@gmail.com" class="contact-pill-link">
+                <span class="contact-pill-icon"><i data-lucide="mail"></i></span>
+                <span>amandikumarasinghe19@gmail.com</span>
+              </a>
+              <a href="tel:+94712029050" class="contact-pill-link">
+                <span class="contact-pill-icon"><i data-lucide="phone"></i></span>
+                <span>+94 71 202 9050 (071 202 9050)</span>
+              </a>
+              <a href="https://linkedin.com/in/charuka-amandi-709591328" target="_blank" rel="noopener" class="contact-pill-link">
+                <span class="contact-pill-icon"><i data-lucide="linkedin"></i></span>
+                <span>linkedin.com/in/charuka-amandi-709591328</span>
+              </a>
+              <a href="https://github.com/amandikumarasinghe" target="_blank" rel="noopener" class="contact-pill-link">
+                <span class="contact-pill-icon"><i data-lucide="github"></i></span>
+                <span>github.com/amandikumarasinghe</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Action Box: Direct Connect Card -->
+          <div class="teal-card-form" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 48px 36px; gap: 20px;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background-color: var(--color-teal-bg); color: var(--color-teal); display: flex; align-items: center; justify-content: center;">
+              <i data-lucide="send" style="width: 28px; height: 28px;"></i>
+            </div>
+            <h3 style="font-size: 22px; font-weight: 800; color: var(--color-charcoal); margin: 0;">Direct Contact</h3>
+            <p style="font-size: 14px; color: var(--color-text-body); line-height: 1.6; margin: 0;">
+              Available for immediate discussions regarding internships in Business Analysis, Systems Analysis, or Business Intelligence.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 12px; width: 100%; margin-top: 8px;">
+              <a href="mailto:amandikumarasinghe19@gmail.com" class="form-submit-btn" style="text-decoration: none;">
+                <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+                <span>Email Charuka Directly</span>
+              </a>
+              <a href="https://drive.google.com/file/d/1Jaac0xOW-Occb3NcA4Q6z3P5To6l7Beu/view?usp=sharing" target="_blank" rel="noopener" class="btn-outline-play" style="justify-content: center; border: 1px solid var(--color-border); padding: 12px 20px;">
+                <i data-lucide="file-text" style="width: 15px; height: 15px;"></i>
+                <span>View Official CV (Google Drive)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       8. FOOTER
+       ========================================================================== -->
+  <footer class="studio-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div>
+          <div class="footer-brand-title">
+            <span>Charuka Amandi</span>
+          </div>
+          <p class="footer-brand-desc">
+            BSc (Special) in Management Information Systems undergraduate at NSBM Green University with expertise in business analysis, SQL databases, full-stack systems, and Power BI.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://linkedin.com/in/charuka-amandi-709591328" target="_blank" rel="noopener" class="social-circle-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com/amandikumarasinghe" target="_blank" rel="noopener" class="social-circle-link" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="mailto:amandikumarasinghe19@gmail.com" class="social-circle-link" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links 1 -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About &amp; Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Competencies</a></li>
+            <li><a href="#impact">Academic Milestones</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div>
+          <h4 class="footer-col-title">Technical Skills</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Java &bull; Python &bull; SQL</a></li>
+            <li><a href="#services">Spring Boot &bull; MySQL</a></li>
+            <li><a href="#services">Power BI (PL-300)</a></li>
+            <li><a href="#services">UI/UX &bull; Figma</a></li>
+            <li><a href="#services">Systems Analysis</a></li>
+          </ul>
+        </div>
+
+        <!-- Certifications & Languages Column -->
+        <div>
+          <h4 class="footer-col-title">Certifications &amp; Languages</h4>
+          <p class="newsletter-subtext" style="margin-bottom: 10px;">
+            &bull; <strong>Microsoft Power BI (PL-300)</strong><br>
+            &bull; <strong>English Diploma</strong> &ndash; Univ. of Sabaragamuwa<br>
+            &bull; <strong>Python for Beginners</strong> &ndash; Univ. of Moratuwa<br>
+            &bull; <strong>Languages:</strong> English (Proficient), Sinhala (Native)
+          </p>
+          <a href="https://drive.google.com/file/d/1Jaac0xOW-Occb3NcA4Q6z3P5To6l7Beu/view?usp=sharing" target="_blank" rel="noopener" class="btn-primary" style="padding: 10px 20px; font-size: 12px; margin-top: 8px;">
+            <span>Official CV (Google Drive)</span>
+            <i data-lucide="external-link" class="btn-arrow-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Charuka Amandi Kumarasinghe. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#hero">Privacy Policy</a>
+          <a href="#hero">Terms</a>
+          <a href="https://drive.google.com/file/d/1Jaac0xOW-Occb3NcA4Q6z3P5To6l7Beu/view?usp=sharing" target="_blank" rel="noopener">CV on Drive</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motion Engine & Interactive Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
